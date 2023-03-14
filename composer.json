@@ -1,0 +1,15 @@
+{
+    "name": "mvsjunior/volg-php",
+    "description": "Framework simples feito em php",
+    "autoload": {
+        "psr-4": {
+            "Mvsjunior\\VolgPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mauro Jr"
+        }
+    ],
+    "require": {}
+}
