@@ -4,8 +4,10 @@ namespace Mvsjunior\VolgPhp\example;
 
 class ExampleController {
 
-    public function index()
+    public function index($params = [])
     {
-        echo "ExampleController - index";
+        print_r($_GET);
+        $nome = isset($_GET['nome']) ? $_GET['nome'] : "";
+        echo "ExampleController - index <br> nome: {$nome}";
     }
 }

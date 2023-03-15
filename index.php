@@ -13,11 +13,21 @@ $router = new Router;
         [
             "/teste" => [
                 "uri"    => "/teste", 
-                "action" => "\\Mvsjunior\\VolgPhp\\example\\ExampleController@index"
+                "action" => "\\Mvsjunior\\VolgPhp\\example\\ExampleController@index",
+                "requestMethod" => "GET",
+
+            ],
+            "/home" => [
+                "uri"    => "/home", 
+                "action" => "\\Mvsjunior\\VolgPhp\\example\\ExampleController@index",
+                "requestMethod" => "GET"
+            ],
+            "/album-de-fotos" => [
+                "uri"    => "/album-de-fotos", 
+                "action" => "\\Mvsjunior\\VolgPhp\\example\\ExampleController@index",
+                "requestMethod" => "GET"
                 ]
         ]
     );
-
-echo $_SERVER['REQUEST_URI'] . "<br>";
 
 $router->handle();
